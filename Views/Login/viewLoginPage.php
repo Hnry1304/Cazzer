@@ -11,7 +11,7 @@
         <form action="?class=login&function=login" method="post">
 
         <label for="Username">
-            userName:
+            username:
             <input type="text" name="username">
         </label>
 
