@@ -3,7 +3,7 @@
 
         private $username;
         private $password;
-        protected $conexion;
+        protected  $conexion;
 
 
         public function __construct(){
