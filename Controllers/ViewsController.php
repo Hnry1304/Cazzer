@@ -1,12 +1,20 @@
 <?php
     class ViewsController{
 
-        public function viewMainPage(){
-            require_once 'Views/HomePage/viewMainPage.php';
-        }
+        // Vista Pagina Principal
+            public function vistaHomePage(){
+                require_once 'Views/HomePage/homePage.php';
+            }
+        
+        // Vista Login, Unicamente accedido por el admin..
+            public function viewLoginPage(){
+                require_once 'Views/Login/viewLoginPage.php';
+            }
 
-        //Vista de Login de Admi
-        public function viewLoginPage(){
-            require_once 'Views/Login/viewLoginPage.php';
-        }
+        
+        // Vista Agregar Imagen Admi
+            public function viewAddImagenes(){
+                require_once 'Views/Admin/viewAddImagenes.php';
+            }
+        
     }

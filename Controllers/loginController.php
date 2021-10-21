@@ -16,7 +16,7 @@
                 header('Location: index.php?class=views&function=viewLoginPage');
 
             }else{
-                require_once 'Views/Admin/viewAdminPage.php';
+                header('Location: index.php?class=Crud&function=readImagenes');
             }
         }
     }
