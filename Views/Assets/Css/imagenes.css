@@ -1,0 +1,10 @@
+.box{
+    background-color: #000;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.box .imagenes{
+    width: 150px;
+    height: 150px;
+}
