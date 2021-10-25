@@ -14,8 +14,8 @@
 
         }
 
-        public function read(){
-            $sql = "SELECT *FROM imagenes";
+        public function read($inicio, $fin){
+            $sql = "SELECT *FROM imagenes LIMIT $inicio, $fin";
 
             $statement = $this->conexion->prepare($sql);
             $statement->execute();
