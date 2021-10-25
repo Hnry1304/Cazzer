@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="Views/Assets/Css/header.css">
     <link rel="stylesheet" href="Views/Assets/Css/imagenes.css">
+    <link rel="stylesheet" href="Views/Assets/Css/paginacion.css">
 </head>
 <body>
     <div class="container">
