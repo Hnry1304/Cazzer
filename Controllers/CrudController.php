@@ -1,5 +1,6 @@
 <?php
     require_once 'Models/Admin/Crud.php';
+    require_once 'Models/Admin/paginacionModel.php';
     class CrudController{
 
         public function addImagenes(){
@@ -18,8 +19,11 @@
         }
 
         public function readImagenes(){
+            //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
+            require_once 'Paginacion/Admin/paginacion.php';
+
             $read_imagenes = new Crud;
-            $information = $read_imagenes->read();
+            $information = $read_imagenes->read($inicio, $postPorPagina);
 
             require_once 'Views/Admin/viewHomePageAdmin.php';
         }
