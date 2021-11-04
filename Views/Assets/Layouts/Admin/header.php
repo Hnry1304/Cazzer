@@ -14,7 +14,7 @@
         <nav class="navegation">
             <a href="?class=Crud&function=readImagenes">Home</a>
             <a href="?class=Views&function=viewAddImagenes">Agregar Imagen</a>
-            <a href="#">Log Out</a>
+            <a href="?class=Views&function=vistaHomePage&pagina=1">Log Out</a>
         </nav>
 
 
