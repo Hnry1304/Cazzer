@@ -23,4 +23,28 @@
                 require_once 'Views/Admin/viewAddImagenes.php';
             }
         
+        // Vista previa Playera con Imagen
+            public function vistaImagen(){
+                $id = $_GET['id'];
+
+                $read_imagenes = new Crud;
+                $read_imagenes->setId($id);
+                $resultado = $read_imagenes->readImagen();
+                
+                if(!$resultado){
+                    header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
+                }else{
+
+                    $information = $read_imagenes->Imagen();
+                    require_once 'Views/HomePage/Options/vistaImagen.php';
+                }
+            }
+        // Vista para confirmar compra
+            public function confirmation(){
+                
+                echo $_POST['color']."<br>";
+                echo $_POST['talla']."<br>";
+                echo $_POST['sexo']."<br>";
+
+            }
     }
