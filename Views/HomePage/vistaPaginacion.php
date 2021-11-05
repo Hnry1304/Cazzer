@@ -1,8 +1,8 @@
 <div class="paginacion">
     <?php if($pagina == 0 || $pagina == 1):?>
-        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina -1 ?>"class="disiable">Back</a>
+        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina -1 ?>"class="disiable"><</a>
     <?php else:?>
-        <a href="?class=Views&function=vistaHomePage&pagina=<?= $pagina -1 ?>">Back</a>
+        <a href="?class=Views&function=vistaHomePage&pagina=<?= $pagina -1 ?>"><</a>
     <?php endif ?>
 
     <?php if($pagina <6):?>
@@ -37,8 +37,8 @@
     
 
     <?php if($pagina == $numero_paginacion):?>
-        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina +1 ?>" class="disiable">Next</a>
+        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina?>" class="disiable">></a>
     <?php else:?>
-        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina +1 ?>">Next</a>
+        <a href="?class=Views&function=vistaHomePage&pagina=<?=$pagina +1 ?>">></a>
     <?php endif?>
 </div>
