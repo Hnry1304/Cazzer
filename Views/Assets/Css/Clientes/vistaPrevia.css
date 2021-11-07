@@ -14,6 +14,7 @@
     height: 300px;
     background-color: cadetblue;
     position: relative;
+    margin: 0px auto;
 }
 .shirt{
     width: 300px;
@@ -30,7 +31,7 @@
 }
 
 .formulario{
-    width: 300px;
-    height: 140px;
+    width: 100%;
+
     background-color: cornflowerblue;
 }
