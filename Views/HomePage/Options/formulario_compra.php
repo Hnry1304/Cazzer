@@ -1,64 +1,52 @@
 <div class="formulario">
-    <form action="?class=Views&function=confirmation" method="POST">
-        <!-- TIPO PRODUCTO -->
-        <label for="Producto">
-            <p>Producto</p>
-            <input type="radio" name="Producto" value="Playera"  id="Playera" checked> Playera
-            <input type="radio" name="Producto" value="Sudadera" id="Sudadera"> Sudadera
-            <input type="radio" name="Producto" value="Gorra"    id="Gorra"> Gorra
-            <input type="radio" name="Producto" value="Taza"     id="Taza"> taza
-
-        </label>
     
-        <!-- SEXO PLAYERA-->
-        <label for="Sexo">
-            <p>Sexo</p>
-            <input type="radio" name="sexo" value="Caballero" id="Caballero" checked> Caballero
-            <input type="radio" name="sexo" value="Dama"      id="Dama"> Dama
-            <input type="radio" name="sexo" value="Nino"      id="Nino"> Nino
-        </label>
-        <br>
-    
-        <!-- COLOR DEL PRODUCTO  -->
-        <label for="Color" id="Colores">
-            <P>Color Producto</P>
-            <input type="radio" name="color" value="Negro"  id="Negro" checked> Negro
-            <input type="radio" name="color" value="Blanco" id="Blanco"> Blanco
-            <input type="radio" name="color" value="Gris"   id="Gris"> Gris
+    <!-- TIPO PRODUCTO -->
+    <label for="Producto">
+        <p>Producto</p>
+        <input type="radio" name="Producto" value="Playera"  id="Playera" checked> Playera
+        <input type="radio" name="Producto" value="Sudadera" id="Sudadera"> Sudadera
+        <input type="radio" name="Producto" value="Gorra"    id="Gorra"> Gorra
+        <input type="radio" name="Producto" value="Taza"     id="Taza"> taza
 
-        </label>
-        <br>
+    </label>
 
-        <!-- TALLA DE LA PRENDA-->
-        <label for="Talla" id="Talla">
-            <p>Talla</p>
-            <input type="radio" name="talla" value="Grande"  id="Grande"> Grande
-            <input type="radio" name="talla" value="Mediana" id="Mediana" checked> Mediana
-            <input type="radio" name="talla" value="Chica"   id="Chica"> Chica
-        </label>
-        <br>
+    <div id="playera_formulario">
+        <?php require_once 'Views/HomePage/Options/opcion_playera.php';?>
+    </div>
 
-        <!-- CANTIDAD PRODUCTO-->
-        <p>Cantidad</p>
-        <input type="number" name="Cantidad" >
+    <div id="gorra_formulario">
+        <?php require_once 'Views/HomePage/Options/opcion_gorras.php';?>
+    </div>
 
-        <input type="submit" name="submit" value="Comprar">
-    </form>
+    <div id="taza_formulario">
+        <?php require_once 'Views/HomePage/Options/opcion_tazas.php';?>
+    </div>
+
+
+
 </div>
 
 <script>
-    //Id Pertenece alos Labels
-    let colores = document.getElementById('Colores');
-    let talla = document.getElementById('Talla');
 
-    // Id Pertenece al color de la playera
+    //  Pertenece a cada div, cada uno almacena formulario para cada area..
+    let formulario_playera = document.getElementById('playera_formulario');
+    let formulario_gorra = document.getElementById('gorra_formulario');
+    let formulario_taza = document.getElementById('taza_formulario');
+
+
+    // Desactivamos formularios para gorras y tazas...
+    formulario_gorra.style.display = "none";
+    formulario_taza.style.display = "none";
+
+
+    // // Id Pertenece al color de la playera
     let colorBlanco = document.getElementById('Blanco');
     let colorNegro  = document.getElementById('Negro');
     let colorGris   = document.getElementById('Gris');
 
-    // Id Pertenece tipo Producto, Playera, Sudadera, Gorra y Taza
+    // // Id Pertenece tipo Producto, Playera, Sudadera, Gorra y Taza
     let playera  = document.getElementById('Playera');
-    let sudadera = document.getElementById('Sudadera');
+    //let sudadera = document.getElementById('Sudadera');
     let gorra    = document.getElementById('Gorra');
     let taza     = document.getElementById('Taza');
 
@@ -102,14 +90,27 @@
     //Activar Opcion Tazas
     taza.onclick = activarTazas;
     function activarTazas(evento){
-        colores.style.display = "none";
-        talla.style.display   = "none";
+        formulario_playera.style.display = "none";
+        formulario_gorra.style.display = "none";
+        formulario_taza.style.display = "block";
+
     }
 
+    //Activar Playera por defecto
     playera.onclick = activarPlayera;
     function activarPlayera(evento){
-        colores.style.display = "block";
-        talla.style.display   = "block";
+        formulario_gorra.style.display = "none";
+        formulario_taza.style.display = "none";
+        formulario_playera.style.display = "block";
     }
+
+    //Activar Gorra
+    gorra.onclick = activarGorra;
+    function activarGorra(evento){
+        formulario_taza.style.display = "none";
+        formulario_playera.style.display = "none";
+        formulario_gorra.style.display = "block";
+    }
+
 </script>
 
