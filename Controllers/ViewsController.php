@@ -40,11 +40,21 @@
                 }
             }
         // Vista para confirmar compra
-            public function confirmation(){
+            public function producto(){
+                $producto = $_POST["submit"];
                 
-                echo $_POST['color']."<br>";
-                echo $_POST['talla']."<br>";
-                echo $_POST['sexo']."<br>";
+                if(!isset($producto)){
+                    header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
+                }
 
+                if($producto == 'Comprar Gorra'){
+                    echo "Gorras";
+                }elseif($producto == 'Comprar Taza'){
+                    echo "Tazas";
+                }elseif($producto == 'Comprar Playera'){
+                    echo "Playera";
+                }else{
+                    header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
+                }
             }
     }
