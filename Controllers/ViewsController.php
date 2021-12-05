@@ -48,13 +48,20 @@
                 }
 
                 if($producto == 'Comprar Gorra'){
-                    echo "Gorras";
+                    require_once 'Validations/Formulario_producto/gorra.php';
+
                 }elseif($producto == 'Comprar Taza'){
-                    echo "Tazas";
+                    require_once 'Validations/Formulario_producto/taza.php';
+
                 }elseif($producto == 'Comprar Playera'){
-                    echo "Playera";
+                    require_once 'Validations/Formulario_producto/playera.php';
+
                 }else{
                     header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
                 }
+            }
+        // Vista Compra Realizada
+            public function productoComprado(){
+                require_once 'Views/HomePage/Options/compraRealizado.php';
             }
     }
