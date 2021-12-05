@@ -27,6 +27,19 @@
 </div>
 
 <script>
+    
+    // Pertenece a las imagenes de las tazas,sudaderas, gorras y playeras
+    let opcion_playeras = document.getElementById('playeras');
+    let opcion_sudaderas = document.getElementById('sudaderas');
+    let opcion_tazas = document.getElementById('tazas');
+    let opcion_gorras = document.getElementById('gorras');
+
+
+    // Pertenece a las opciones de remeras...
+    let opcion_caballero = document.getElementById('Caballero');
+    let opcion_dama = document.getElementById('Dama');
+    let opcion_nino = document.getElementById('Nino');
+
 
     //  Pertenece a cada div, cada uno almacena formulario para cada area..
     let formulario_playera = document.getElementById('playera_formulario');
@@ -46,7 +59,7 @@
 
     // // Id Pertenece tipo Producto, Playera, Sudadera, Gorra y Taza
     let playera  = document.getElementById('Playera');
-    //let sudadera = document.getElementById('Sudadera');
+    let sudadera = document.getElementById('Sudadera');
     let gorra    = document.getElementById('Gorra');
     let taza     = document.getElementById('Taza');
 
@@ -104,6 +117,12 @@
         formulario_playera.style.display = "block";
     }
 
+    //Activar Sudaderas
+    sudadera.onclick = activarSudadera;
+    function activarSudadera(evento){
+        alert('Sudaderas');
+    }
+
     //Activar Gorra
     gorra.onclick = activarGorra;
     function activarGorra(evento){
@@ -111,6 +130,12 @@
         formulario_playera.style.display = "none";
         formulario_gorra.style.display = "block";
     }
+
+    //Activar vista Playera Dama
+    opcion_dama.onclick = activar_opcion_dama;
+    function activar_opcion_dama(evento){
+        alert('Hello World');
+    }    
 
 </script>
 
