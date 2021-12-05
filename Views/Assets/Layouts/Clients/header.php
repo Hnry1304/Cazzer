@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Views/Assets/Css/Clientes/imagenes.css">
     <link rel="stylesheet" href="Views/Assets/Css/Clientes/paginacion.css">
     <link rel="stylesheet" href="Views/Assets/Css/Clientes/vistaPrevia.css">
+    <link rel="stylesheet" href="Views/Assets/Css/Clientes/formulario.css">
 
 </head>
 <body>
