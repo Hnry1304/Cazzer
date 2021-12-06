@@ -23,7 +23,7 @@
                 require_once 'Views/Admin/viewAddImagenes.php';
             }
         
-        // Vista previa Playera con Imagen
+        // Vista previa producto con Imagen
             public function vistaImagen(){
                 $id = $_GET['id'];
 
