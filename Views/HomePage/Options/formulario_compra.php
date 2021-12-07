@@ -14,6 +14,10 @@
         <?php require_once 'Views/HomePage/Options/opcion_playera.php';?>
     </div>
 
+    <div id="sudadera_formulario">
+        <?php require_once 'Views/HomePage/Options/opcion_sudadera.php';?>
+    </div>
+
     <div id="gorra_formulario">
         <?php require_once 'Views/HomePage/Options/opcion_gorras.php';?>
     </div>
@@ -25,7 +29,7 @@
 
 
 </div>
-
+<!--
 <script>
     
     // Pertenece a las imagenes de las tazas,sudaderas, gorras y playeras
@@ -138,4 +142,4 @@
     }    
 
 </script>
-
+-->
