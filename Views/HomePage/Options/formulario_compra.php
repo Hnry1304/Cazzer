@@ -10,6 +10,7 @@
 
     </label>
 
+
     <div id="playera_formulario">
         <?php require_once 'Views/HomePage/Options/opcion_playera.php';?>
     </div>
@@ -25,10 +26,9 @@
     <div id="taza_formulario">
         <?php require_once 'Views/HomePage/Options/opcion_tazas.php';?>
     </div>
-
+    <script src="Views/Assets/Js/ocultar_formularios.js"></script>
 </div>
 
-<script src="Views/Assets/Js/ocultar_formularios.js"></script>
 <!--
 <script>
     
