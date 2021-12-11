@@ -26,9 +26,9 @@
         <?php require_once 'Views/HomePage/Options/opcion_tazas.php';?>
     </div>
 
-
-
 </div>
+
+<script src="Views/Assets/Js/ocultar_formularios.js"></script>
 <!--
 <script>
     
