@@ -2,7 +2,7 @@
     $sexShirt = $_POST['sexo'];
     $colorShirt = $_POST['color'];
     $tallShirt = $_POST['talla'];
-    $cantidad_playera = $_POST['cantidad'];
+    $cantidad_playera = $_POST['Cantidad'];
 
     if(empty($sexShirt)|| empty($colorShirt)|| empty($tallShirt)){
         header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');

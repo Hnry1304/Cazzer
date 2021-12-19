@@ -1,6 +1,6 @@
 <?php
     $colorTaza = $_POST['color'];
-    $cantidad_taza = $_POST['cantidad'];
+    $cantidad_taza = $_POST['Cantidad'];
     if(empty($colorTaza)){
         header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
     }
