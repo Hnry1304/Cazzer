@@ -33,10 +33,6 @@
 -->
 <script src="Views/Assets/Js/ocultar_formularios.js"></script>
 
-<!--
-    Scripts que nos oculta o muestra todas las imagenes de playeras,sudaderas,gorras y tazas
--->
-<script src="Views/Assets/Js/imagenes_producto.js"></script>
 
 <!--
 <script>
