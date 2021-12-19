@@ -53,7 +53,7 @@
                 }elseif($producto == 'Comprar Taza'){
                     require_once 'Validations/Formulario_producto/taza.php';
 
-                }elseif($producto == 'Comprar Playera'){
+                }elseif($producto == 'Comprar Playera' || $producto == 'Comprar Sudadera'){
                     require_once 'Validations/Formulario_producto/playera.php';
 
                 }else{
