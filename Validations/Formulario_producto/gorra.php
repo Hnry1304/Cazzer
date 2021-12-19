@@ -1,7 +1,7 @@
 <?php
     $colorGorra = $_POST['color'];
     $tallaGorra = $_POST['talla']; // Adulto o Nino
-    $cantidad_gorra = $_POST['cantidad'];
+    $cantidad_gorra = $_POST['Cantidad'];
 
     if(empty($colorGorra) || empty($tallaGorra)){
         header('Location: index.php?class=Views&function=vistaHomePage&pagina=1');
