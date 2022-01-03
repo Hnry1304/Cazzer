@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(39, 18, 18);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    background-color: cadetblue;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.navegation{
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    width: 100%;
+    padding: 5px 0 0 5px;
+}
+
+.navegation a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 2.5px 0;
+}

@@ -1,0 +1,34 @@
+.paginacion{
+    display: flex;
+    color: #fff;
+    bottom: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paginacion a{
+    width: 41px;
+    background-color: #501111;
+    display: block;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.paginacion a:hover{
+    background-color: cornflowerblue;
+}
+
+.paginacion .enable{
+    background-color: #2a5ba573;
+}
+
+.paginacion .disiable{
+    display: none;
+}
+
+.paginacion .posicion{
+    background-color: crimson;
+}
