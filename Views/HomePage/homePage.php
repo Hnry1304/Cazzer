@@ -4,7 +4,7 @@
         <article class="box">
             <?php  foreach($information as $information):?>
                 <div class="cuadro">
-                    <a href="?class=Views&function=vistaImagen&id=<?= $information['ID'] ?>&pagina=<?= $_GET['pagina'] ?>">
+                    <a href="/Views/vistaImagen&id=<?= $information['ID'] ?>&pagina=<?= $_GET['pagina'] ?>">
                         <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="imagenes">
                     </a>
                 </div>

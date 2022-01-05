@@ -1,8 +1,8 @@
 <?php
     session_start();
     require_once 'autoload.php';
+    require_once 'Config/parametres.php';
     require_once 'Config/database.php';
-
 
     if(isset($_GET['class'])){
         $className = $_GET['class'].'Controller';

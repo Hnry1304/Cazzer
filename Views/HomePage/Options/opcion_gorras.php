@@ -1,4 +1,4 @@
-<form action="?class=Views&function=producto" method="POST">    
+<form action="/Views/producto&id=<?=$_GET['id']?>&pagina=<?=$_GET['pagina']?>" method="POST">    
     <label for="tamano">
         <p>Tamano</p>
         <input type="radio" name="talla" value="Adulto" id="gorraAdulto" checked> Adulto
@@ -17,6 +17,20 @@
 
     </label>
     <br>
+    
+    <label for="Datos Personales" class="datos_personales">
+        <p>Datos</p>
+        <label for="username">
+            Nombre:
+            <input type="text" name="name" id="name" >
+        </label>
+
+        <label for="telephone">
+            Telefono:
+            <input type="text" name="phone" id="phone">
+        </label>
+    </label>
+
     <!-- CANTIDAD PRODUCTO-->
     <p>Cantidad</p>
     <input type="number" name="Cantidad" value="1" id="cantidadCompra">
