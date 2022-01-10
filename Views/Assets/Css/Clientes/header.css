@@ -30,7 +30,7 @@ body{
 }
 
 .item-2{
-    display: block;
+    display: none;
     order: 2;
     flex-grow: 1;
     text-align: end;
