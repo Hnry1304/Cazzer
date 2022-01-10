@@ -1,6 +1,7 @@
 <?php require_once 'Views/Assets/Layouts/Clients/header.php' ?>
-    <div class="container">
-        <div class="imagenes">
+    
+    <div class="vistaProducto">
+        <div class="vistaImagen">
 
             <div class="playeraCaballero" id="playeraCaballero">
                 <img src="/imagenes/Ropa/playera_negra_hombre.png"  alt="playera_negra"     class="shirt" id="playera_negra_caballero">

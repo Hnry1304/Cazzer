@@ -1,15 +1,15 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
 }
 
-.container{
+.vistaProducto{
     width: 100%;
     height: 500px;
     background-color: burlywood;
 }
 
-.imagenes{
+.vistaImagenen{
     width: 300px;
     height: 300px;
     background-color: cadetblue;
@@ -48,4 +48,78 @@
     width: 100%;
 
     background-color: cornflowerblue;
+} */
+
+
+.vistaProducto{
+    padding: 0;
+    margin: 0;
+}
+
+.vistaImagen{
+    width: 100%;
+    position: relative;
+}
+.shirt{
+    width: 300px;
+    height: 300px;
+}
+
+.taza{
+    width: 300px;
+    height: 300px;
+}
+
+.caps{
+    width: 300px;
+    height: 300px;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 45px;
+    left: 80px;
+}
+
+.formulario{
+    padding: 1rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.formulario input[type='text'] {
+    width: 70%;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.formulario p{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.formulario input[type ='submit']{
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+}
+
+.formulario input[type ='submit']:hover{
+    background-color: crimson;
+    cursor: pointer;
 }

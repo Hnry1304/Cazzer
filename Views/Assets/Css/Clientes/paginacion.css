@@ -5,11 +5,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .paginacion a{
     width: 41px;
-    background-color: #501111;
+    background-color: #113750;
     display: block;
     color: #fff;
     padding: 6px;
@@ -30,5 +31,6 @@
 }
 
 .paginacion .posicion{
-    background-color: crimson;
-}
+    background-color: rgb(151, 53, 73);
+} 
+

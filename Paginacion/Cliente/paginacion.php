@@ -12,5 +12,5 @@
 
 
     if($pagina > $numero_paginacion || $pagina < 1){
-        header("Location: index.php?class=Views&function=vistaHomePage&pagina=1");
+        header("Location: /Views/vistaHomePage&pagina=1");
     }

@@ -1,25 +1,22 @@
+
 .content{
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    height: 488px;
 }
 
 .box{
-    height: 450px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #c7c7c7;
-    margin-top: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .box .cuadro{
+    background-color: #3b3b3b;
     width: 100px;
     height: 100px;
+    margin-top: 10px;
 }
 
-.box .imagenes{
+.imagenes{
     width: 100px;
     height: 100px;
 }
