@@ -24,3 +24,14 @@
             <?php endif?>
             <a href="/Views/viewLoginPage" class="item-2">Login</a>
         </nav>    	
+        <section class="content">
+        <ul>
+            <li><a href="#" class="opcion_Tazas">Tazas</a></li>
+            <li><a href="#" class="opcion_playeras">Playeras</a></li>
+            <li><a href="#" class="opcion_sudaderas">Sudaderas</a></li>
+            <li><a href="#" class="opcion_gorras">Gorras</a></li>
+            <li><a href="#" class="opcion_fundas">Fundas Celular</a></li>
+            <li><a href="#" class="opcion_personalizacion">Personalizacion</a></li>
+        </ul>
+        <div class="clear"></div>
+    </section>
