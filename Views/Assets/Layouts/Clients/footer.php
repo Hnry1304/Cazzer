@@ -1,7 +1,5 @@
 
         
-<<<<<<< HEAD
-=======
         <div class="footer">
             <div class="descriptions_footer">
                 <h1>Cazzer</h1>
@@ -28,7 +26,6 @@
                 
             </div>
         </div>
->>>>>>> pb/main
     </div>
 </body>
 </html>

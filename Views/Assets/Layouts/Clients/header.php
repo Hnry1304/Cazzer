@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/header.css">
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/footer.css">
->>>>>>> pb/main
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/imagenes.css">
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/paginacion.css">
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/vistaPrevia.css">
@@ -20,19 +17,10 @@
     <div class ="container">
         <nav>
             <?php if(isset($_GET['pagina'])): ?>
-<<<<<<< HEAD
-                <a href="/Views/vistaHomePage&pagina=<?= $_GET['pagina']?>" class="title">Title</a>
-            
-            <?php else: ?>
-                <a href="/Views/vistaHomePage&pagina=1" class="title">Title</a>
-            <?php endif?>
-            <a href="/Views/viewLoginPage" class="login">Login</a>
-=======
                 <a href="/Views/vistaHomePage&pagina=<?= $_GET['pagina']?>" class="item-1">Title</a>
             
             <?php else: ?>
                 <a href="/Views/vistaHomePage&pagina=1" class="item-1">Title</a>
             <?php endif?>
             <a href="/Views/viewLoginPage" class="item-2">Login</a>
->>>>>>> pb/main
         </nav>    	
