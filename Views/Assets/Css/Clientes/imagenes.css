@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .content{
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -20,6 +21,27 @@
 }
 
 .box .imagenes{
+=======
+
+.content{
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box .cuadro{
+    background-color: #3b3b3b;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.imagenes{
+>>>>>>> pb/main
     width: 100px;
     height: 100px;
 }

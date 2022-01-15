@@ -6,7 +6,11 @@
 
         public function __construct(){
             try{
+<<<<<<< HEAD
                 $this->conexion = new PDO('mysql:host=localhost;dbname=tienda;','root','');
+=======
+                $this->conexion = new PDO('mysql:host=localhost;dbname=Tienda;','root','');
+>>>>>>> pb/main
                 $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
 
