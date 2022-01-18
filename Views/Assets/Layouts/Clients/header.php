@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/paginacion.css">
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/vistaPrevia.css">
     <link rel="stylesheet" href="/Views/Assets/Css/Clientes/formulario.css">
+    <link rel="stylesheet" href="/Views/Assets/Css/Clientes/vistaProducto.css">
 
 </head>
 <body>
     <div class ="container">
         <nav>
             <?php if(isset($_GET['pagina'])): ?>
-                <a href="/Views/vistaHomePage&pagina=<?= $_GET['pagina']?>" class="item-1">Title</a>
+                <a href="/Views/vistaHomePage" class="item-1">Title</a>
             
             <?php else: ?>
-                <a href="/Views/vistaHomePage&pagina=1" class="item-1">Title</a>
+                <a href="/Views/vistaHomePage" class="item-1">Title</a>
             <?php endif?>
             <a href="/Views/viewLoginPage" class="item-2">Login</a>
         </nav>    	
