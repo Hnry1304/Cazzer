@@ -32,10 +32,14 @@
 
 .formulario{
     padding: 1rem;
-    background-color: rgb(51, 51, 51, 0.602);
+    background-color: rgba(51, 51, 51, 0.26);
     text-align: center;
 }
 
+
+.formulario .desactivar_producto{
+    display: none;
+}
 .formulario input[type='text'] {
     width: 70%;
     display: block;
