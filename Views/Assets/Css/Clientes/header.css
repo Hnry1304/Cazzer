@@ -41,3 +41,32 @@ body{
 .item-2:hover{
     color: #000;
 }
+
+
+.content{
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.content ul{
+    list-style: none;
+    width: 90%;
+    float: right;
+}
+.clear{
+    float: none;
+    clear: both;
+}
+.content a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-image: url(/imagenes/fondo1.png);
+    margin-bottom: 5px;
+    padding: 15px 0;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
