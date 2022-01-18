@@ -1,3 +1,12 @@
+<?php
+    if(empty($producto)){
+        header("Location: /Views/vistaHomePage");
+    }elseif($producto != 'taza' && $producto != 'funda' && $producto != 'playera' &&
+        $producto != 'sudadera' && $producto != 'gorra' && $producto != 'personalizacion'){
+            header("Location: /Views/vistaHomePage");
+    }
+?>
+
 <?php require_once 'Views/Assets/Layouts/Clients/header.php' ?>
     <section class="contenido_productos">
         <div class="buscar">
