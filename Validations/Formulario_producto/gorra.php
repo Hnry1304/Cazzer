@@ -6,18 +6,18 @@
     $precio_gorra = '70';
 
     if(empty($colorGorra) || empty($tallaGorra)){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }
 
     $colorGorra = filter_var($colorGorra, FILTER_SANITIZE_STRING);
     $tallaGorra = filter_var($tallaGorra, FILTER_SANITIZE_STRING);
 
     if($colorGorra != 'Negro' && $colorGorra != 'Blanco' && $colorGorra != 'Gris'){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }elseif($tallaGorra != 'Adulto' && $tallaGorra != 'Nino'){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }elseif($cantidad_gorra < 1 ){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }else{
         
         $datos_cliente->setNombre($nombreCliente);
