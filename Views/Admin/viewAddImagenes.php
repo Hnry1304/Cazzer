@@ -2,7 +2,7 @@
 
     <div class="formulario">
 
-        <form action="?class=Crud&function=addImagenes" method="post" enctype="multipart/form-data">
+        <form action="/Crud/addImagenes" method="post" enctype="multipart/form-data">
             <label for="url_imagen">
                 Url:
                 <input type="file" name="url">

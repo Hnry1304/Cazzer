@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="Container">
-        <form action="?class=login&function=login" method="post">
+        <form action="/login/login" method="post">
 
         <label for="Username">
             username:

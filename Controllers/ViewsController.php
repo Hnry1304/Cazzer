@@ -22,12 +22,19 @@
     
     // Vista Producto
         public function viewProduct(){
-            //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
-            require_once 'Paginacion/Cliente/paginacion.php';
+            $producto = $_GET['producto'];
+            if(!isset($producto)){
+                header("Location: /Views/vistaHomePage");
+            }else{
+                //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
+                require_once 'Paginacion/Cliente/paginacion.php';
+    
+                $read_imagenes = new Crud;
+                $information = $read_imagenes->read($inicio, $postPorPagina);
+                require_once 'Views/HomePage/Options/viewProduct.php';
 
-            $read_imagenes = new Crud;
-            $information = $read_imagenes->read($inicio, $postPorPagina);
-            require_once 'Views/HomePage/Options/viewProduct.php';
+            }
+            
         }
 
     // Vista previa producto con Imagen

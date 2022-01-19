@@ -12,5 +12,5 @@
 
 
     if($pagina > $numero_paginacion || $pagina < 1){
-        header("Location: index.php?class=Crud&function=readImagenes&pagina=1");
+        header("Location:/Crud/readImagenes&pagina=1");
     }
