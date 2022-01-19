@@ -15,7 +15,7 @@
             $add_imagenes->setUrl($url);
             $add_imagenes->add();
 
-            header('Location: index.php?class=Views&function=viewAddImagenes');
+            header('Location:/Views/viewAddImagenes');
         }
 
         public function readImagenes(){

@@ -13,10 +13,10 @@
             $resultado = $login->comprobar();
             
             if(!$resultado){
-                header('Location: index.php?class=views&function=viewLoginPage');
+                header('Location: /views/viewLoginPage');
 
             }else{
-                header('Location: index.php?class=Crud&function=readImagenes');
+                header('Location: /Crud/readImagenes');
             }
         }
     }
