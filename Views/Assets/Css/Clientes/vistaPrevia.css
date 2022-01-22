@@ -1,56 +1,3 @@
-/* *{
-    padding: 0;
-    margin: 0;
-}
-
-.vistaProducto{
-    width: 100%;
-    height: 500px;
-    background-color: burlywood;
-}
-
-.vistaImagenen{
-    width: 300px;
-    height: 300px;
-    background-color: cadetblue;
-    position: relative;
-    margin: 0px auto;
-}
-.shirt{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-}
-
-.taza{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 50px;
-    left: 30px;
-}
-
-.caps{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-}
-
-.img{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50px;
-    left: 75px;
-}
-
-.formulario{
-    width: 100%;
-
-    background-color: cornflowerblue;
-} */
-
-
 .vistaProducto{
     padding: 0;
     margin: 0;
@@ -85,10 +32,14 @@
 
 .formulario{
     padding: 1rem;
-    background-color: rgb(51, 51, 51, 0.602);
+    background-color: rgba(51, 51, 51, 0.26);
     text-align: center;
 }
 
+
+.formulario .desactivar_producto{
+    display: none;
+}
 .formulario input[type='text'] {
     width: 70%;
     display: block;

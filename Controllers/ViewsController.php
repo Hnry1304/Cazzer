@@ -6,11 +6,7 @@
 
     // Vista Pagina Principal
         public function vistaHomePage(){
-            //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
-            require_once 'Paginacion/Cliente/paginacion.php';
 
-            $read_imagenes = new Crud;
-            $information = $read_imagenes->read($inicio, $postPorPagina);
             require_once 'Views/HomePage/homePage.php';
         }
     
@@ -24,6 +20,23 @@
             require_once 'Views/Admin/viewAddImagenes.php';
         }
     
+    // Vista Producto
+        public function viewProduct(){
+            $producto = $_GET['producto'];
+            if(!isset($producto)){
+                header("Location: /Views/vistaHomePage");
+            }else{
+                //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
+                require_once 'Paginacion/Cliente/paginacion.php';
+    
+                $read_imagenes = new Crud;
+                $information = $read_imagenes->read($inicio, $postPorPagina);
+                require_once 'Views/HomePage/Options/viewProduct.php';
+
+            }
+            
+        }
+
     // Vista previa producto con Imagen
         public function vistaImagen(){
             $id = $_GET['id'];
@@ -33,7 +46,7 @@
             $resultado = $read_imagenes->readImagen();
             
             if(!$resultado){
-                header('Location: /Views/vistaHomePage&pagina=1');
+                header('Location: /Views/viewProduct&pagina=1');
             }else{
                 $information = $read_imagenes->Imagen();
                 require_once 'Views/HomePage/Options/vistaImagen.php';
@@ -50,7 +63,7 @@
             $telefonoCliente = $_POST['phone'];
 
             if(!isset($producto)){
-                header('Location: /Views/vistaHomePage&pagina=1');
+                header('Location: /Views/viewProduct&pagina=1');
             }else{
                 $datos_cliente = new compras;
                 
@@ -67,7 +80,7 @@
                     require_once 'Validations/Formulario_producto/playera.php';
                     
                 }else{
-                    header('Location: /Views/vistaHomePage&pagina=1');
+                    header('Location: /Views/viewProduct&pagina=1');
                 }
 
             }

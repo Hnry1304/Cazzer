@@ -3,7 +3,7 @@
     $contrasena = $_POST['password'];
 
     if(empty($username) || empty($contrasena)){
-        header('Location: index.php?class=views&function=viewLoginPage');
+        header('Location: /views/viewLoginPage');
     }
 
     

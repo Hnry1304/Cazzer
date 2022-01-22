@@ -5,8 +5,8 @@
         <p>Producto</p>
         <input type="radio" name="Producto" value="Playera"  id="Playera" checked> Playera
         <input type="radio" name="Producto" value="Sudadera" id="Sudadera"> Sudadera
-        <input type="radio" name="Producto" value="Gorra"    id="Gorra"> Gorra
-        <input type="radio" name="Producto" value="Taza"     id="Taza"> taza
+        <input type="radio" name="Producto" value="Gorra"    id="Gorra" class="desactivar_producto">
+        <input type="radio" name="Producto" value="Taza"     id="Taza" class="desactivar_producto"> 
 
     </label>
 

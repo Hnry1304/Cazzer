@@ -6,7 +6,7 @@
     $precio_playera = '150';
 
     if(empty($sexShirt)|| empty($colorShirt)|| empty($tallShirt)){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }
  
 
@@ -15,13 +15,13 @@
     $tallShirt = filter_var($tallShirt, FILTER_SANITIZE_STRING);
 
     if($sexShirt != 'Caballero' && $sexShirt != 'Dama' && $sexShirt != 'Nino'){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }elseif($colorShirt != 'Negro' && $colorShirt != 'Blanco' && $colorShirt != 'Gris'){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }elseif($tallShirt != 'Mediana' && $tallShirt != 'Grande' && $tallShirt != 'Chica'){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }elseif($cantidad_playera < 1 ){
-        header('Location: /Views/vistaHomePage&pagina=1');
+        header('Location: /Views/viewProduct&pagina=1');
     }else{
 
         $datos_cliente->setNombre($nombreCliente);
