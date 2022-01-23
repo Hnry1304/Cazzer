@@ -40,6 +40,7 @@
     // Vista previa producto con Imagen
         public function vistaImagen(){
             $id = $_GET['id'];
+            $producto = $_GET['producto'];
 
             $read_imagenes = new Crud;
             $read_imagenes->setId($id);
@@ -48,8 +49,21 @@
             if(!$resultado){
                 header('Location: /Views/viewProduct&pagina=1');
             }else{
-                $information = $read_imagenes->Imagen();
-                require_once 'Views/HomePage/Options/vistaImagen.php';
+                
+                if(!isset($producto)){
+                    header("Location: /Views/vistaHomePage");
+                }else{
+                    if($producto != 'playera' && $producto != 'taza' && $producto != 'funda' &&
+                        $producto != 'sudadera' && $producto != 'gorra' && $producto != 'personalizacion'
+                    ){
+                        header("Location: /Views/vistaHomePage");
+                    }else{
+                        $information = $read_imagenes->Imagen();
+                        require_once 'Views/HomePage/Options/vistaImagen.php';
+                    }
+
+                }
+                
 
             }
         }
