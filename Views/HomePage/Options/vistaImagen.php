@@ -3,6 +3,8 @@
     <div class="vistaProducto">
         <div class="vistaImagen">
 
+            <?php if($producto == 'playera'): ?>
+
             <div class="playeraCaballero" id="playeraCaballero">
                 <img src="/imagenes/Ropa/playera_negra_hombre.png"  alt="playera_negra"     class="shirt" id="playera_negra_caballero">
                 <img src="/imagenes/Ropa/playera_blanca_hombre.png" alt="playera_blanca"    class="shirt" id="playera_blanca_caballero">
@@ -21,18 +23,28 @@
                 <img src="/imagenes/Ropa/playera_nino_blanco.png"   alt="playera_blanca"    class="shirt" id="playera_blanca_kids">
                 <img src="/imagenes/Ropa/playera_nino_gris.png"     alt="playera_gris"      class="shirt" id="playera_gris_kids">
             </div>
+            <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="img">
+            <?php require_once'Views/HomePage/Options/Formularios/opcion_playera.php'; ?>
 
+            <?php elseif($producto == 'sudadera'): ?>
             <div class="sudaderasUnisex" id="sudaderasUnisex">
                 <img src="/imagenes/Ropa/sudadera_negra.png"    alt="sudadera_negra"     class="shirt" id="sudadera_negra">
                 <img src="/imagenes/Ropa/sudadera_blanca.png"   alt="sudadera_blanca"    class="shirt" id="sudadera_blanca">
                 <img src="/imagenes/Ropa/sudadera_gris.png"     alt="sudadera_gris"      class="shirt" id="sudadera_gris">
             </div>
+            <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="img">
+            <?php require_once'Views/HomePage/Options/Formularios/opcion_sudadera.php'; ?>
 
+
+            <?php elseif($producto == 'taza'): ?>
             <div class="TazasBlanks" id="TazaBlanks">
                 <img src="/imagenes/Tazas/tazaBlanca.png" alt="taza" class="taza" id="taza">
 
             </div>
+            <?php require_once'Views/HomePage/Options/Formularios/opcion_tazas.php'; ?>
 
+
+            <?php elseif($producto == 'gorra'): ?>
             <div class="GorrasTrucker" id="GorrasTrucker">
                 <img src="/imagenes/Gorras/gorra_negra.png"   alt="gorra_negra"     class="caps"     id="gorra_negra">
                 <img src="/imagenes/Gorras/gorra_blanco.png"  alt="gorra_blanca"    class="caps"     id="gorra_blanca">
@@ -41,12 +53,28 @@
                 <img src="/imagenes/Gorras/gorra_rosa.png"    alt="gorra_rosa"      class="caps"     id="gorra_rosa">
                 <img src="/imagenes/Gorras/gorra_naranja.png" alt="gorra_naranja"   class="caps"     id="gorra_naranja">
             </div>
+            <?php require_once'Views/HomePage/Options/Formularios/opcion_gorras.php'; ?>
 
-            <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="img">
+            <?php elseif($producto == 'funda'): ?>
+            <div>
+                <h1>Funda Celular</h1>
+            </div>
+
+            <?php elseif($producto == 'personalizacion'): ?>
+            <div>
+                <h1>Personalizacion</h1>
+            </div>
+
+            <?php endif; ?>
+            
 
         </div>
-        <?php require_once'Views/HomePage/Options/formulario_compra.php'; ?>
+        
     </div>
+    <!--
+    Scripts que nos oculta y muestra Formulario, depende que opcion Cliqueamos
+    -->
+    <script src="/Views/Assets/Js/ocultar_formularios.js"></script>
 
 <?php require_once 'Views/Assets/Layouts/Clients/footer.php' ?>
 
