@@ -18,7 +18,7 @@
                 <div class="cuadro">
                     <img src="/imagenes/Ropa/playera_negra_hombre.png" alt="imagen Playera" class="color_ropa">
 
-                    <a href="/Views/vistaImagen&id=<?= $information['ID'] ?>&pagina=<?= $_GET['pagina'] ?>">
+                    <a href="/Views/vistaImagen&id=<?= $information['ID'] ?>&pagina=<?= $_GET['pagina'] ?>&producto=<?=$producto?>">
                         <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="imagenes">
                     </a>
                 </div>
