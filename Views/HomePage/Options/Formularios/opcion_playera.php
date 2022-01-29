@@ -3,18 +3,18 @@
         <!-- SEXO PLAYERA-->
         <label for="Sexo">
             <p>Sexo</p>
-            <input type="radio" name="sexo" value="Caballero"  id="OptionsplayeraCaballero" checked> Caballero
-            <input type="radio" name="sexo" value="Dama" id="OptionsplayeraDama"> Dama
-            <input type="radio" name="sexo" value="Nino" id="OptionsplayeraNino"> Nino
+            <input type="radio" name="sexo" value="Caballero" onclick="shirt_man()" checked> Caballero
+            <input type="radio" name="sexo" value="Dama" onclick="shirt_woman()"> Dama
+            <input type="radio" name="sexo" value="Nino" onclick="shirt_kids()"> Nino
         </label>
         <br>
 
         <!-- COLOR DEL PRODUCTO  -->
         <label for="Color">
             <P>Color Producto</P>
-            <input type="radio" name="color" value="Negro"  id="playeraNegra" checked> Negro
-            <input type="radio" name="color" value="Blanco" id="playeraBlanca"> Blanco
-            <input type="radio" name="color" value="Gris"   id="playeraGris"> Gris
+            <input type="radio" name="color" value="Negro" onclick="black_shirt()" checked> Negro
+            <input type="radio" name="color" value="Blanco" onclick="white_shirt()"> Blanco
+            <input type="radio" name="color" value="Gris"   onclick="gray_shirt()"> Gris
 
         </label>
         <br>
@@ -50,3 +50,4 @@
         <input type="submit" name="submit" value="Comprar Playera">
     </form>
 </div>
+<script src="/Views/Assets/Js/ocultarPlayera.js"></script>
