@@ -28,9 +28,13 @@
             }else{
                 //LLamaremos la paginacion.php, ahi tomaremos postPorPagina e inicio...
                 require_once 'Paginacion/Cliente/paginacion.php';
-    
+                
+                echo $producto;
+                $dataBase = $producto;
+
                 $read_imagenes = new Crud;
-                $information = $read_imagenes->read($inicio, $postPorPagina);
+
+                $information = $read_imagenes->read($inicio, $postPorPagina,$dataBase);
                 require_once 'Views/HomePage/Options/viewProduct.php';
 
             }
@@ -42,9 +46,11 @@
             $id = $_GET['id'];
             $producto = $_GET['producto'];
 
+            $dataBase = $producto;
+
             $read_imagenes = new Crud;
             $read_imagenes->setId($id);
-            $resultado = $read_imagenes->readImagen();
+            $resultado = $read_imagenes->readImagen($dataBase);
             
             if(!$resultado){
                 header('Location: /Views/viewProduct&pagina=1');
@@ -58,7 +64,7 @@
                     ){
                         header("Location: /Views/vistaHomePage");
                     }else{
-                        $information = $read_imagenes->Imagen();
+                        $information = $read_imagenes->Imagen($dataBase);
                         require_once 'Views/HomePage/Options/vistaImagen.php';
                     }
 

@@ -6,31 +6,31 @@
             <?php if($producto == 'playera'): ?>
 
             <div class="playeraCaballero" id="playeraCaballero">
-                <img src="/imagenes/Ropa/playera_negra_hombre.png"  alt="playera_negra"     class="shirt" id="playera_negra_caballero">
-                <img src="/imagenes/Ropa/playera_blanca_hombre.png" alt="playera_blanca"    class="shirt" id="playera_blanca_caballero">
-                <img src="/imagenes/Ropa/playera_gris_hombre.png"   alt="playera_gris"      class="shirt" id="playera_gris_caballero">
-
+                <img src="/imagenes/Ropa/playera_negra_hombre.png"  alt="shirt" class="shirt" id="black_shirt_man">
+                <img src="/imagenes/Ropa/playera_blanca_hombre.png" alt="shirt" class="shirt" id="white_shirt_man">
+                <img src="/imagenes/Ropa/playera_gris_hombre.png"   alt="shirt" class="shirt" id="gray_shirt_man">
+                                                                    
             </div>
 
             <div class="playeraDama" id="playeraDama">
-                <img src="/imagenes/Ropa/playera_negra_mujer.png"   alt="playera_negra"     class="shirt" id="playera_negra_dama">
-                <img src="/imagenes/Ropa/playera_blanca_mujer.png"  alt="playera_blanca"    class="shirt" id="playera_blanca_dama">
-                <img src="/imagenes/Ropa/playera_gris_mujer.png"    alt="playera_gris"      class="shirt" id="playera_gris_dama">
+                <img src="/imagenes/Ropa/playera_negra_mujer.png"   alt="shirt" class="shirt" id="black_shirt_woman">
+                <img src="/imagenes/Ropa/playera_blanca_mujer.png"  alt="shirt" class="shirt" id="white_shirt_woman">
+                <img src="/imagenes/Ropa/playera_gris_mujer.png"    alt="shirt" class="shirt" id="gray_shirt_woman">
             </div>
 
             <div class="playeraNinos" id="playeraNinos">
-                <img src="/imagenes/Ropa/playera_nino_negro.png"    alt="playera_negra"     class="shirt" id="playera_negra_kids">
-                <img src="/imagenes/Ropa/playera_nino_blanco.png"   alt="playera_blanca"    class="shirt" id="playera_blanca_kids">
-                <img src="/imagenes/Ropa/playera_nino_gris.png"     alt="playera_gris"      class="shirt" id="playera_gris_kids">
+                <img src="/imagenes/Ropa/playera_nino_negro.png"    alt="shirt" class="shirt" id="black_shirt_kids">
+                <img src="/imagenes/Ropa/playera_nino_blanco.png"   alt="shirt" class="shirt" id="white_shirt_kids">
+                <img src="/imagenes/Ropa/playera_nino_gris.png"     alt="shirt" class="shirt" id="gray_shirt_kids">
             </div>
             <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="img">
             <?php require_once'Views/HomePage/Options/Formularios/opcion_playera.php'; ?>
 
             <?php elseif($producto == 'sudadera'): ?>
             <div class="sudaderasUnisex" id="sudaderasUnisex">
-                <img src="/imagenes/Ropa/sudadera_negra.png"    alt="sudadera_negra"     class="shirt" id="sudadera_negra">
-                <img src="/imagenes/Ropa/sudadera_blanca.png"   alt="sudadera_blanca"    class="shirt" id="sudadera_blanca">
-                <img src="/imagenes/Ropa/sudadera_gris.png"     alt="sudadera_gris"      class="shirt" id="sudadera_gris">
+                <img src="/imagenes/Ropa/sudadera_negra.png"    alt="sudadera_negra"     class="shirt" id="black_sweater">
+                <img src="/imagenes/Ropa/sudadera_blanca.png"   alt="sudadera_blanca"    class="shirt" id="white_sweater">
+                <img src="/imagenes/Ropa/sudadera_gris.png"     alt="sudadera_gris"      class="shirt" id="gray_sweater">
             </div>
             <img src="/imagenes/<?= $information['URL_IMAGEN']; ?>" alt="" class="img">
             <?php require_once'Views/HomePage/Options/Formularios/opcion_sudadera.php'; ?>
@@ -71,10 +71,5 @@
         </div>
         
     </div>
-    <!--
-    Scripts que nos oculta y muestra Formulario, depende que opcion Cliqueamos
-    -->
-    <script src="/Views/Assets/Js/ocultar_formularios.js"></script>
 
 <?php require_once 'Views/Assets/Layouts/Clients/footer.php' ?>
-

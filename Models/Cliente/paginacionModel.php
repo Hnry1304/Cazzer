@@ -3,9 +3,9 @@
 
     class PaginacionModel extends DatosImagenes{
 
-        public function Datos(){
+        public function Datos($dataBase){
 
-            $sql = "SELECT *FROM imagenes";
+            $sql = "SELECT *FROM $dataBase";
              
             $statement = $this->conexion->prepare($sql);
             $statement->execute();
@@ -15,8 +15,8 @@
             return $datos;
         }
 
-        public function totalDatos(){
-            $sql = "SELECT *FROM imagenes";
+        public function totalDatos($dataBase){
+            $sql = "SELECT *FROM $dataBase";
              
             $statement = $this->conexion->prepare($sql);
             $statement->execute();

@@ -21,6 +21,8 @@
             $this->conexion = $this->conexion->connect();
         }
 
+
+
         public function setUrl($url){
             $this->url = $url;
         }

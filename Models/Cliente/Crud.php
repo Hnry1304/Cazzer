@@ -16,8 +16,8 @@
 
         }
 
-        public function read($inicio, $fin){
-            $sql = "SELECT *FROM imagenes LIMIT $inicio, $fin";
+        public function read($inicio, $fin, $dataBase){
+            $sql = "SELECT *FROM $dataBase LIMIT $inicio, $fin";
 
             $statement = $this->conexion->prepare($sql);
             $statement->execute();
@@ -27,8 +27,8 @@
             return $information;
         }
 
-        public function readImagen(){
-            $sql = "SELECT *FROM imagenes WHERE ID = :id";
+        public function readImagen($dataBase){
+            $sql = "SELECT *FROM $dataBase WHERE ID = :id";
             
             $statement = $this->conexion->prepare($sql);
             $statement->execute(array(
@@ -44,9 +44,9 @@
             return $valor;
         }
 
-        public function Imagen(){
-            $sql = "SELECT *FROM imagenes WHERE ID = :id";
-
+        public function Imagen($dataBase){
+            $sql = "SELECT *FROM $dataBase WHERE ID = :id";
+            
             $statement = $this->conexion->prepare($sql);
             $statement->execute(array(
                 ":id" => $this->getId()
